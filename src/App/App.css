@@ -1,0 +1,99 @@
+.app {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+
+.container{
+    border: #4fd3ff 2px solid;
+    border-radius: 6px;
+    color: #2c2f38;
+    padding: 10px;
+    height: 160px;
+}
+
+.counter {
+    background-color: #4fd3ff;
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.setting{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    padding: 10px;
+    border: #4fd3ff 2px solid;
+    border-radius: 6px;
+    margin-bottom: 20px;
+
+}
+
+.input-container {
+    display: flex;
+    gap: 6px;
+}
+
+.inputError{
+    border: 1px solid red;
+    background-color: #ffa6a2;
+    color: white;
+}
+
+.label {
+    color: white;
+    min-width: 70px;
+    text-align: start;
+}
+
+.error {
+    color: red;
+    cursor: auto;
+}
+
+.info{
+    color: #2c2f38;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 8px;
+    border: #4fd3ff 2px solid;
+    border-radius: 6px;
+    justify-content: center;
+}
+
+.button {
+    background-color: #4fd3ff;
+    color: #2c2f38;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+    min-width: 100px;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button.disabled {
+    background-color: #acacac;
+    color: #2c2f38;
+    cursor: auto;
+}
+
+
+
+
+
