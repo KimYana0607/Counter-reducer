@@ -1,4 +1,4 @@
-import {RootState} from "../App/store.ts";
+import { RootState } from "../app/store";
 
 export const CounterSelectors = {
     counter: (state: RootState) => state.counter.counter,

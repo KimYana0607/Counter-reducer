@@ -27,12 +27,12 @@ export const minValueAC = createAction<number>('setting/setMin')
 
 
 export const CounterReducer = createReducer(initialState, (builder) => {
-    builder.addCase(addValueAC, (state, action) => {
+    builder.addCase(addValueAC, (state) => {
         if (state.counter < state.maxValue) {
             state.counter += 1
         }
     })
-        .addCase(resetValueAC, (state, action) => {
+        .addCase(resetValueAC, (state) => {
             state.counter = state.minValue
         })
         .addCase(setValuesFromLSAC, (state, action) => {
@@ -41,7 +41,7 @@ export const CounterReducer = createReducer(initialState, (builder) => {
             state.counter = action.payload.min
             state.isSet = true
         })
-        .addCase(setValuesFromSettingAC, (state,action)=>{
+        .addCase(setValuesFromSettingAC, (state)=>{
             state.counter = state.minValue
             state.isSet = true
         })
